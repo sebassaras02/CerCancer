@@ -1,4 +1,8 @@
-pandas == 1.5.3
+pandas == 1.5.2
 numpy == 1.23.5
 seaborn == 0.12.2
 matplotlib == 3.7.1
+pandas_profiling == 3.6.6
+phik == 0.12.3
+pycaret == 3.0.4
+sklearn == 1.2.0
