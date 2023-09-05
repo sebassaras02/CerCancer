@@ -1,0 +1,141 @@
+model:
+  actual_estimator: "LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,\n\
+    \                   intercept_scaling=1, l1_ratio=None, max_iter=1000,\n     \
+    \              multi_class='auto', n_jobs=None, penalty='l2',\n              \
+    \     random_state=99, solver='lbfgs', tol=0.0001, verbose=0,\n              \
+    \     warm_start=False)"
+  actual_estimator__C: 1.0
+  actual_estimator__class_weight: null
+  actual_estimator__dual: false
+  actual_estimator__fit_intercept: true
+  actual_estimator__intercept_scaling: 1
+  actual_estimator__l1_ratio: null
+  actual_estimator__max_iter: 1000
+  actual_estimator__multi_class: auto
+  actual_estimator__n_jobs: null
+  actual_estimator__penalty: l2
+  actual_estimator__random_state: 99
+  actual_estimator__solver: lbfgs
+  actual_estimator__tol: 0.0001
+  actual_estimator__verbose: 0
+  actual_estimator__warm_start: false
+  balance: "TransformerWrapper(exclude=None, include=None,\n                   transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,\n\
+    \                                                             n_jobs=None,\n \
+    \                                                            random_state=None,\n\
+    \                                                             sampling_strategy='auto')))"
+  balance__exclude: null
+  balance__include: null
+  balance__transformer: "FixImbalancer(estimator=SMOTE(k_neighbors=5, n_jobs=None,\
+    \ random_state=None,\n                              sampling_strategy='auto'))"
+  balance__transformer__estimator: SMOTE(k_neighbors=5, n_jobs=None, random_state=None,
+    sampling_strategy='auto')
+  balance__transformer__estimator__k_neighbors: 5
+  balance__transformer__estimator__n_jobs: null
+  balance__transformer__estimator__random_state: null
+  balance__transformer__estimator__sampling_strategy: auto
+  categorical_imputer: "TransformerWrapper(exclude=None, include=[],\n           \
+    \        transformer=SimpleImputer(add_indicator=False, copy=True,\n         \
+    \                                    fill_value=None,\n                      \
+    \                       keep_empty_features=False,\n                         \
+    \                    missing_values=nan,\n                                   \
+    \          strategy='most_frequent',\n                                       \
+    \      verbose='deprecated'))"
+  categorical_imputer__exclude: null
+  categorical_imputer__include: '[]'
+  categorical_imputer__transformer: "SimpleImputer(add_indicator=False, copy=True,\
+    \ fill_value=None,\n              keep_empty_features=False, missing_values=nan,\n\
+    \              strategy='most_frequent', verbose='deprecated')"
+  categorical_imputer__transformer__add_indicator: false
+  categorical_imputer__transformer__copy: true
+  categorical_imputer__transformer__fill_value: null
+  categorical_imputer__transformer__keep_empty_features: false
+  categorical_imputer__transformer__missing_values: .nan
+  categorical_imputer__transformer__strategy: most_frequent
+  categorical_imputer__transformer__verbose: deprecated
+  clean_column_names: "TransformerWrapper(exclude=None, include=None,\n          \
+    \         transformer=CleanColumnNames(match='[\\\\]\\\\[\\\\,\\\\{\\\\}\\\\\"\
+    \\\\:]+'))"
+  clean_column_names__exclude: null
+  clean_column_names__include: null
+  clean_column_names__transformer: CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')
+  clean_column_names__transformer__match: '[\]\[\,\{\}\"\:]+'
+  memory: FastMemory(location=C:\Users\LP00035\AppData\Local\Temp\joblib)
+  normalize: "TransformerWrapper(exclude=None, include=None,\n                   transformer=MinMaxScaler(clip=False,\
+    \ copy=True,\n                                            feature_range=(0, 1)))"
+  normalize__exclude: null
+  normalize__include: null
+  normalize__transformer: MinMaxScaler(clip=False, copy=True, feature_range=(0, 1))
+  normalize__transformer__clip: false
+  normalize__transformer__copy: true
+  normalize__transformer__feature_range: (0, 1)
+  numerical_imputer: "TransformerWrapper(exclude=None,\n                   include=['First\
+    \ sexual intercourse',\n                            'Hormonal Contraceptives (years)',\
+    \ 'IUD (years)',\n                            'STDs', 'STDs:condylomatosis',\n\
+    \                            'STDs:vulvo-perineal condylomatosis', 'STDs:HIV',\n\
+    \                            'STDs: Number of diagnosis', 'Dx:Cancer', 'Dx:CIN',\n\
+    \                            'Dx:HPV', 'Dx', 'Hinselmann', 'Schiller',\n     \
+    \                       'Citology'],\n                   transformer=SimpleImputer(add_indicator=False,\
+    \ copy=True,\n                                             fill_value=None,\n\
+    \                                             keep_empty_features=False,\n   \
+    \                                          missing_values=nan,\n             \
+    \                                strategy='mean',\n                          \
+    \                   verbose='deprecated'))"
+  numerical_imputer__exclude: null
+  numerical_imputer__include: '[''First sexual intercourse'', ''Hormonal Contraceptives
+    (years)'', ''IUD (years)'', ''STDs'', ''STDs:condylomatosis'', ''STDs:vulvo-perineal
+    condylomatosis'', ''STDs:HIV'', ''STDs: Number of diagnosis'', ''Dx:Cancer'',
+    ''Dx:CIN'', ''Dx:HPV'', ''Dx'', ''Hinselmann'', ''Schiller'', ''Citology'']'
+  numerical_imputer__transformer: "SimpleImputer(add_indicator=False, copy=True, fill_value=None,\n\
+    \              keep_empty_features=False, missing_values=nan, strategy='mean',\n\
+    \              verbose='deprecated')"
+  numerical_imputer__transformer__add_indicator: false
+  numerical_imputer__transformer__copy: true
+  numerical_imputer__transformer__fill_value: null
+  numerical_imputer__transformer__keep_empty_features: false
+  numerical_imputer__transformer__missing_values: .nan
+  numerical_imputer__transformer__strategy: mean
+  numerical_imputer__transformer__verbose: deprecated
+  steps: "[('numerical_imputer', TransformerWrapper(exclude=None,\n              \
+    \     include=['First sexual intercourse',\n                            'Hormonal\
+    \ Contraceptives (years)', 'IUD (years)',\n                            'STDs',\
+    \ 'STDs:condylomatosis',\n                            'STDs:vulvo-perineal condylomatosis',\
+    \ 'STDs:HIV',\n                            'STDs: Number of diagnosis', 'Dx:Cancer',\
+    \ 'Dx:CIN',\n                            'Dx:HPV', 'Dx', 'Hinselmann', 'Schiller',\n\
+    \                            'Citology'],\n                   transformer=SimpleImputer(add_indicator=False,\
+    \ copy=True,\n                                             fill_value=None,\n\
+    \                                             keep_empty_features=False,\n   \
+    \                                          missing_values=nan,\n             \
+    \                                strategy='mean',\n                          \
+    \                   verbose='deprecated'))), ('categorical_imputer', TransformerWrapper(exclude=None,\
+    \ include=[],\n                   transformer=SimpleImputer(add_indicator=False,\
+    \ copy=True,\n                                             fill_value=None,\n\
+    \                                             keep_empty_features=False,\n   \
+    \                                          missing_values=nan,\n             \
+    \                                strategy='most_frequent',\n                 \
+    \                            verbose='deprecated'))), ('balance', TransformerWrapper(exclude=None,\
+    \ include=None,\n                   transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,\n\
+    \                                                             n_jobs=None,\n \
+    \                                                            random_state=None,\n\
+    \                                                             sampling_strategy='auto')))),\
+    \ ('transformation', TransformerWrapper(exclude=None, include=None,\n        \
+    \           transformer=PowerTransformer(copy=True, method='yeo-johnson',\n  \
+    \                                              standardize=False))), ('normalize',\
+    \ TransformerWrapper(exclude=None, include=None,\n                   transformer=MinMaxScaler(clip=False,\
+    \ copy=True,\n                                            feature_range=(0, 1)))),\
+    \ ('clean_column_names', TransformerWrapper(exclude=None, include=None,\n    \
+    \               transformer=CleanColumnNames(match='[\\\\]\\\\[\\\\,\\\\{\\\\\
+    }\\\\\"\\\\:]+'))), ('actual_estimator', LogisticRegression(C=1.0, class_weight=None,\
+    \ dual=False, fit_intercept=True,\n                   intercept_scaling=1, l1_ratio=None,\
+    \ max_iter=1000,\n                   multi_class='auto', n_jobs=None, penalty='l2',\n\
+    \                   random_state=99, solver='lbfgs', tol=0.0001, verbose=0,\n\
+    \                   warm_start=False))]"
+  transformation: "TransformerWrapper(exclude=None, include=None,\n              \
+    \     transformer=PowerTransformer(copy=True, method='yeo-johnson',\n        \
+    \                                        standardize=False))"
+  transformation__exclude: null
+  transformation__include: null
+  transformation__transformer: PowerTransformer(copy=True, method='yeo-johnson', standardize=False)
+  transformation__transformer__copy: true
+  transformation__transformer__method: yeo-johnson
+  transformation__transformer__standardize: false
+  verbose: false
