@@ -1,1 +1,9 @@
 Name,Value,Timestamp,Step
+"Evaluation metrics Model","Logistic Regression",1693946329672,1
+"Evaluation metrics Accuracy",0.9522,1693946329672,1
+"Evaluation metrics AUC",0.9655,1693946329672,1
+"Evaluation metrics Recall",0.8667,1693946329672,1
+"Evaluation metrics Prec.",0.5652,1693946329672,1
+"Evaluation metrics F1",0.6842,1693946329672,1
+"Evaluation metrics Kappa",0.6596,1693946329672,1
+"Evaluation metrics MCC",0.6773,1693946329672,1
